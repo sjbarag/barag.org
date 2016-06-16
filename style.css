@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+body {
+  /* center the page horizontally */
+  margin: 0px auto;
+  /* pad the sides just a bit to keep text off the edges */
+  padding: 0 10px;
+  /* the width of an iPhone 5 should be enough */
+  max-width: 640px;
+  /* just use the stystem-standard sans-serif font */
+  font-family: sans-serif;
+  font-size: 14px;
+  /* make things breathe! */
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+  line-height: 1.0;
+  /* separate header from body just a bit */
+  margin-bottom: 3.5ex;
+}
+
+aside {
+  font-size: 18px;
+}
+
+p, ul, ol, dl {
+
+  /* use proportional spacing above and below, regardless of font size */
+  margin: 0 1em;
+}
+
+.name {
+  font-weight:700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8em;
+  text-transform: uppercase;
+}
+
+.ba:hover {
+  color: #d33682;
+}
+
+.rag:hover {
+  color: #268bd2;
+}
+
+.pronunciation {
+  margin-top: -1ex;
+  font-size: 2em;
+}
+
+img {
+  vertical-align: middle;
+  display: inline;
+  height: 2em;
+}
