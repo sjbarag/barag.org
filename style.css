@@ -5,13 +5,17 @@ body {
   margin: 0px auto;
   /* pad the sides just a bit to keep text off the edges */
   padding: 0 10px;
-  /* the width of an iPhone 5 should be enough */
+  /* the width of an iPhone SE should be enough */
   max-width: 640px;
   /* just use the stystem-standard sans-serif font */
   font-family: sans-serif;
   font-size: 14px;
   /* make things breathe! */
   line-height: 1.5;
+  /* use dark grey text to prevent high-contrast edge shimmer */
+  color: #222;
+  /* use light grey background to prevent high-contrast edge shimmer */
+  background-color: #efefef;
 }
 
 header {
@@ -26,7 +30,6 @@ aside {
 }
 
 p, ul, ol, dl {
-
   /* use proportional spacing above and below, regardless of font size */
   margin: 0 1em;
 }
@@ -38,21 +41,25 @@ p, ul, ol, dl {
   text-transform: uppercase;
 }
 
-.ba:hover {
+.name.ba:hover {
   color: #d33682;
 }
 
-.rag:hover {
+/* also change the color in the pronunciation guide */
+.name.ba:hover ~ .pronunciation > .ba {
+  color: #d33682;
+}
+
+.name.rag:hover {
+  color: #268bd2;
+}
+
+/* also change the color in the pronunciation guide */
+.name.rag:hover ~ .pronunciation > .rag {
   color: #268bd2;
 }
 
 .pronunciation {
   margin-top: -1ex;
   font-size: 2em;
-}
-
-img {
-  vertical-align: middle;
-  display: inline;
-  height: 2em;
 }
